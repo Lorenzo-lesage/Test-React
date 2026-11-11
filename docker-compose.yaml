@@ -1,0 +1,10 @@
+services:
+  dev-env:
+    build: .
+    volumes:
+      - ./progetti:/app
+      - /app/contextCount/node_modules
+    ports:
+      - "5173-5180:5173-5180"
+    tty: true
+    # stdin_open: true
